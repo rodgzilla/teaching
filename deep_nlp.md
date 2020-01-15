@@ -282,6 +282,9 @@ from there we compute the derivate of `l` according to `b`.
 
 ![MSE formula b gradient](figures/mse_lin_reg_grad_b.gif)
 
+An animation of an application of the gradient descent algorithm on a
+linear regression problem can be found [here](figures/anim_gd.pdf).
+
 ##### Stochastic version
 
 In real problems, it is often not practical to compute the value of
