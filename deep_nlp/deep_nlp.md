@@ -1843,30 +1843,6 @@ model predictions were wrong. In order to visualize these images using
 `plt.imshow` you will have to undo the normalization that we performed
 earlier.
 
-## Lesson 3
-
-### Course
-
-### Practical work
-
-## Lesson 4
-
-### Course
-
-### Practical work
-
-## Lesson 5
-
-### Course
-
-### Practical work
-
-## Lesson 6
-
-### Course
-
-### Practical work
-
 ## References
 
 - [Google machine learning crash course](https://developers.google.com/machine-learning/crash-course)
