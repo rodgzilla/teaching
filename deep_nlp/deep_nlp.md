@@ -1502,6 +1502,7 @@ that requires this type of normalized inputs.
 Let's write the main function of our project.
 
 ```python
+from torch.utils.data import TensorDataset
 import torch.optim as optim
 
 def main():
@@ -1553,6 +1554,8 @@ Once everything is setup, we can call our training function. Let's
 define it.
 
 ```python
+from torch.utils.data import DataLoader
+
 def train(model, criterion, optimizer, dataset, epochs, batch_size):
     dataloader = DataLoader(dataset, batch_size = batch_size, shuffle = True)
 
