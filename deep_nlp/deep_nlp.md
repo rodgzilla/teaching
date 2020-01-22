@@ -1666,7 +1666,7 @@ containing all this code with a call to the evaluation function every
 10 epochs we get the following output.
 
 ```shell
-> python basic_neural_network_example.py 
+> python basic_neural_network_example.py
 Initial accuracy 49.033%
   0 -> 49.033% accuracy
  10 -> 75.767% accuracy
@@ -1711,8 +1711,9 @@ Create a new notebook and, in a new cell, download the dataset using
 the following commands:
 
 ```shell
-!wget http://igm.univ-mlv.fr/~gchatel/ml/mnist_train.pt
-!wget http://igm.univ-mlv.fr/~gchatel/ml/mnist_test.pt
+!rm mnist_*
+!wget https://github.com/rodgzilla/teaching_public/blob/master/datasets/mnist_train.pt?raw=true -O mnist_train.pt
+!wget https://github.com/rodgzilla/teaching_public/blob/master/datasets/mnist_test.pt?raw=true -O mnist_test.pt
 ```
 
 By using `!` at the beginning of the line, we can use shell commands
