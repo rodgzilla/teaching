@@ -1858,3 +1858,9 @@ earlier.
 - [Python Data Science Handbook](https://nbviewer.jupyter.org/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/Index.ipynb) by Jake VanderPlas
 - [PyTorch tutorials](https://pytorch.org/tutorials/)
 - [Oxford Deep NLP course](https://github.com/oxford-cs-deepnlp-2017/lectures)
+- [University of Illinois CS 521: Statistical Natural Language
+  Processing](http://www.natalieparde.com/teaching/cs521_spring2020.html)
+- [Stanford CS224n: Natural Language Processing with Deep
+  Learning](http://web.stanford.edu/class/cs224n/)
+- [Carnegie Mellon University CS11-747: Neural networks for
+  NLP](http://phontron.com/class/nn4nlp2020/index.html)
