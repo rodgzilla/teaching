@@ -64,7 +64,7 @@ General concepts of machine learning:
     such as *clustering* or *dimensionality
     reduction*. Clustering algorithms identify distinct groups
     of data while dimensionality reduction algorithms search for
-    a more succint representations of the data.
+    a more succinct representations of the data.
   - There exist more learning paradigms such as [Reinforcement
     learning](https://en.wikipedia.org/wiki/Reinforcement_learning)
     (AlphaGo), [Semi-supervised
@@ -141,7 +141,7 @@ a much better predictive model than the line in the left plot.
 
 You might be wondering whether you could create a mathematical
 function - a loss function - that would aggregate the individual
-losses in a meaningful fashing.
+losses in a meaningful fashion.
 
 The linear regression models we'll examine here use a loss function
 called *squared loss* (also known as *L<sub>2</sub> loss*). The
@@ -172,7 +172,7 @@ where:
   y)` pairs.
 - `N` is the number of examples in `D`.
 
-Altough MSE is commonly-used in machine learning, it is neither the
+Although MSE is commonly-used in machine learning, it is neither the
 only practical loss function nor the best loss function for all
 circumstances. Because of the squaring operation, a single *large*
 difference between a prediction and a label will be penalized more
@@ -216,7 +216,7 @@ the *slope* is exactly 0. The minimum is where the loss function
 converges.
 
 As computing the loss function for all values of `a` to find its
-minimum would be extremely ineficient we need a better
+minimum would be extremely inefficient we need a better
 mechanism. Let's examine such an algorithm, the *gradient descent*.
 
 As explained in the previous section, we start with a random guess for
@@ -286,7 +286,7 @@ Now onto `b`, we follow a similar process. First we factor by `b`.
 
 ![MSE formula b factored](../figures/mse_lin_reg_loss_b.gif)
 
-from there we compute the derivate of `l` according to `b`.
+from there we compute the derivative of `l` according to `b`.
 
 ![MSE formula b gradient](../figures/mse_lin_reg_grad_b.gif)
 
@@ -336,7 +336,7 @@ equivalent with PyTorch tensors but the name may be different.
 Python distribution with great machine learning integration working on
 Linux, Windows and Mac OS X. Using it instead of the default Python
 distribution of the OS will allow us to have a finer control without
-the need for admnistrator privileges.
+the need for administrator privileges.
 
 During this course, we will a *virtual environments*. A virtual
 environment is a tool that helps to keep dependencies required by
@@ -429,7 +429,7 @@ most of them identical to the NumPy counterparts described
 official documentation for PyTorch tensor creation is available
 [here](https://pytorch.org/docs/stable/torch.html#creation-ops)
 
-Exercices, from
+Exercises, from
 [ML+](https://www.machinelearningplus.com/python/101-numpy-exercises-python/):
 - Create a 1D array of numbers from 0 to 9
 
@@ -591,8 +591,8 @@ tensor([[99,  5,  2,  4],
 Keeping this fact in mind will spare you from terrible debugging
 sessions.
 
-Exercices:
-All the exercices use the following array:
+Exercises:
+All the exercises use the following array:
 
 ```python
 >>> x = torch.tensor([[12,  5,  2,  4], [ 7,  6,  8,  8], [ 1,  6,  7,  7]])
@@ -684,7 +684,7 @@ tensor([[1],
         [3]])
 ```
 
-Exercices:
+Exercises:
 1. Create a 3D tensor containing the numbers from `1` to `27` with shape
   `(3, 3, 3)`
 
@@ -788,8 +788,8 @@ tensor([[ 0,  1,  2,  6,  7,  8],
         [ 3,  4,  5,  9, 10, 11]])
 ```
 
-Exercices:
-All the exercices use the following tensors:
+Exercises:
+All the exercises use the following tensors:
 
 ```python
 >>> x = torch.tensor([1, 2, 3])
@@ -878,7 +878,7 @@ values=tensor([0., 4., 8.]),
 indices=tensor([0, 0, 0]))
 ```
 
-Exercice:
+Exercise:
 
 1. Compute, for each column, the mean of the values of the rows of
    even index in the following tensor.
@@ -954,8 +954,8 @@ Broadcasting is a powerful tool that follows precise rules. An
 in-depth explanation of these rules can be found
 [here](https://nbviewer.jupyter.org/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/02.05-Computation-on-arrays-broadcasting.ipynb#Rules-of-Broadcasting).
 
-A typical usecase of broadcasting is to normalize the values of an
-array by substracting the mean and dividing by the standard
+A typical use case of broadcasting is to normalize the values of an
+array by subtracting the mean and dividing by the standard
 deviation. In the following example, let's assume that the values of
 each column are observation of a different variable. We would like to
 compute the mean and standard deviation for each column and then
@@ -981,9 +981,9 @@ tensor([[-1.0842,  1.0974,  0.2900, -0.7081, -0.8733],
         [ 0.1980, -0.2375, -1.1129, -0.4358,  1.0909]])
 ```
 
-Exercices:
+Exercises:
 
-All the exercices use the following array:
+All the exercises use the following array:
 
 ```python
 >>> a = torch.arange(10).view(-1, 2)
@@ -1126,8 +1126,8 @@ tensor([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 tensor([2, 3, 4, 5, 6, 7, 8, 9])
 ```
 
-Exercices:
-All the exercices use the following arrays:
+Exercises:
+All the exercises use the following arrays:
 
 ```python
 >>> a = torch.arange(16).reshape(4, 4)
@@ -1140,7 +1140,7 @@ tensor([[ 0,  1,  2,  3],
 
 1. Select and sum the multiples of 3 in `a`, the result should be 45.
 
-2. Sustract the mean of the values strictly greater than 8 not
+2. Subtract the mean of the values strictly greater than 8 not
    multiple of 4 to the whole array. The result should be:
 
 ```python
@@ -1252,7 +1252,7 @@ prediction on the output layer.
 
 The third type of layer contains neurons in the middle of the network,
 these are *hidden layers*. These layers are used by the network to
-refine its understanding of the input and analyse the hierarchical
+refine its understanding of the input and analyze the hierarchical
 structure of the data.
 
 The "deep" word in "deep learning" comes from "deep neural networks",
@@ -1262,13 +1262,13 @@ Now that we have defined what a neural network is, let's build one
 that computes a simple function. The network will be composed of a
 single neuron and we want to make it compute the binary AND function.
 
-![Neural network AND exercice](../figures/nn_and_1.png)
+![Neural network AND exercise](../figures/nn_and_1.png)
 
 We want to find _w<sub>1</sub>, w<sub>2</sub>_ and _b_ such that
 
 ![Neural AND equation](../figures/nn_and_eqn.png)
 
-The solution to this exercice is available
+The solution to this exercise is available
 [here](appendix/nn_and_solution.md).
 
 #### Softmax activation
@@ -1378,7 +1378,7 @@ model predictions and correct labels.
 Let's now see how to define and train a neural network using
 PyTorch. There is still a few tools missing to understand the whole
 process that we will get to study in the following courses. The
-complete runable code for the example described in this section is
+complete runnable code for the example described in this section is
 available [here](src/basic_neural_network_example.py) with a lot of
 commentaries.
 
@@ -1498,7 +1498,7 @@ normalize the output of the model using a softmax activation. Just as
 when we compute the sum along the lines of a 2D tensor, we have to
 precise along which dimension we want to perform the sum operation of
 the softmax function. After the line `x = torch.log_softmax(x, dim =
-1)` the shape of `x` is `[batch size, 2]` we the sum of values being 1
+1)` the shape of `x` is `[batch size, 2]` with the sum of values being 1
 along the lines of the tensor. The first column corresponds to the
 confidence of the model in the class `0` (outside the disk) and the
 second column corresponds to the confidence of the model in the class
@@ -1539,7 +1539,7 @@ whole dataset to perform parameters update during training),
 `Dataset` interface. It will later provide us a very simple way to
 generate random batches of samples.
 
-We then instanciate our neural network with `model =
+We then instantiate our neural network with `model =
 SimpleLinearNetwork()`. It is at this point that the weights of all
 the neurons will be initialized according to the algorithm specified
 in the [documentation](https://pytorch.org/docs/stable/nn.html#linear).
@@ -1581,7 +1581,7 @@ First we create our batch generator. PyTorch provides us with the
 `DataLoader` class to create batches of data from a PyTorch
 `Dataset`. It is a very powerful tools that is almost always used to
 write training or evaluation loops. When using `shuffle = True` the
-elements of the dataset will be shuffle everytime we create an
+elements of the dataset will be shuffle every time we create an
 iterator on the `DataLoader` (here, at every epoch).
 
 The first loop `for epoch in range(epochs)` defines the number of
@@ -1622,7 +1622,7 @@ and, as we just explained, the gradients computed using the `backward`
 method are stored next to the parameters their correspond to.
 
 The last step of the training loop is to clean the gradient
-computations that we have just did in order to perform the next
+computations that we have just done in order to perform the next
 optimization step independently of this one. In very specific cases we
 do not want to clear the gradients after the end of the loop but this
 kind of use is beyond the scope of this course.
@@ -1665,8 +1665,8 @@ confidence.
 With `(y_pred_class == y).sum().item()` we get the number of times the
 model prediction corresponds to the label `y`. We use `.item()` to
 extract the result from the PyTorch `tensor` into a simple Python
-`int`. We also could the total number of prediction done by the model
-with `total_pred += len(y)`. The *accuracy* of the model is the
+`int`. We also compute the total number of prediction done by the
+model with `total_pred += len(y)`. The *accuracy* of the model is the
 proportion of correct predictions it makes, `correct_pred /
 total_pred`.
 
@@ -1791,7 +1791,7 @@ the neural network presented during the course as a base.
 
 #### Training and evaluation code
 
-Write a training function and an evalution function inspired by the
+Write a training function and an evaluation function inspired by the
 ones we have seen in the course.
 
 The training function takes both the training and testing datasets as
