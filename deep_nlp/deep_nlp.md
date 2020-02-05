@@ -3222,7 +3222,7 @@ chatbot created in 2020 by Google would cost around $1.4M in cloud
 computing cost only.
 
 To deal with these problems, machine learning practitioners use a
-variety of methods. In this section we will go over two of the main
+variety of methods. In this section we will go over three of the main
 ones.
 
 ##### Learning rate decay
