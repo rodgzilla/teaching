@@ -3,7 +3,7 @@
 ## Summary
 
 - [Lesson 1](#course-1)
-- [Lesson 1](#course-2)
+- [Lesson 2](#course-2)
 
 ## Course 1
 
@@ -995,7 +995,7 @@ format](https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html)
 are available, with the most common one probably being *CSV*
 ([Comma-separated
 values](https://en.wikipedia.org/wiki/Comma-separated_values)). For
-example if we want to load the file [save.csv](../datasets/save.csv):
+example if we want to load the file [save.csv](http://igm.univ-mlv.fr/~gchatel/ml/save.csv):
 
 ```python
 >>> df = pd.read_csv('save.csv')
@@ -1171,8 +1171,8 @@ is often used to build simple machine learning models to predict the
 survival of passenger based on their information. We will come back to
 it when we will build machine learning models, for now let's clean it.
 
-First let's download the file [here](../datasets/titanic.csv) and load it
-using pandas.
+First let's download the file [here](http://igm.univ-mlv.fr/~gchatel/ml/titanic.csv) 
+and load it using pandas.
 
 ```python
 >>> import pandas as pd
