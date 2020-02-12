@@ -4560,7 +4560,9 @@ at your results by using `plt.imshow`.
 
 You can find below a few images you should get during the training
 process. Left column is the source image, right column is the result
-of the compression-decompression process.
+of the compression-decompression process. All the images in this
+section and the CNN section have been obtained with an encoding size
+of 10, resulting in a compression factor of 98.7% (10 / 784).
 
 0% training
 
