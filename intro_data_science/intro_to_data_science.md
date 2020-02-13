@@ -4,6 +4,7 @@
 
 - [Lesson 1](#course-1)
 - [Lesson 2](#course-2)
+- [Lesson 2](#course-3)
 
 ## Course 1
 
