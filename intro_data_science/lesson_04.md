@@ -358,8 +358,9 @@ generalization capabilities, we do it `k` times.
 
 (image from [towardsdatascience](https://towardsdatascience.com/cross-validation-explained-evaluating-estimator-performance-e51e5430ff85))
 
-16. Using [parameter forwarding](../misc/parameter_forwarding.md)
-    Write a function that performs a k-folds validation of a model
+16. Using [parameter forwarding](../misc/parameter_forwarding.md) and
+    [KFold](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.KFold.html),
+    write a function that performs a k-folds validation of a model
     with the following prototype:
 
 ```python
