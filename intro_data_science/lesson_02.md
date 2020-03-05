@@ -417,7 +417,7 @@ column we broadcast a division by the number of rows in the dataset
 `len(df)`. We can see that the 19.9% of the `Age` values, 77.1% of the
 `Cabin` values and 0.225% of the `Embarked` values are missing.
 
-Know that we know where values are missing we have to decide how to
+Now that we know where values are missing we have to decide how to
 handle it. There are multiple strategies to deal with this situation:
 
 - We can remove rows containing missing values. This is quite extreme
