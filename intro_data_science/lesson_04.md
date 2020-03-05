@@ -389,3 +389,38 @@ with `n_estimators` being a `RandomForestRegressor` argument.
 17. Use the `evaluate_model_k_fold` you have built to evaluate the
     `LinearRegression` and `RandomForestRegressor` models you have
     created.
+
+18. Reproduce this whole process on the [King County House house
+    sales](https://www.kaggle.com/harlfoxem/housesalesprediction)
+    dataset, available [here](../datasets/kc_house_data.csv).
+
+    Hints:
+    - The target is the `price` column.
+    - Take a look at the distribution of the various numerical columns
+      of the dataset and in particular to their smallest and biggest
+      values. You can use `plt.scatter` as in [Lesson
+      3](./lesson_03.md#linear-regression-in-scikit-learn) to plot
+      the relationship between two continuous features.
+    - A [polynomial
+      regression](https://en.wikipedia.org/wiki/Polynomial_regression)
+      is simply a linear regression whose variables are products of
+      the base variables of the task. Using this algorithm *might*
+      provide a performance boost on this task. Be *very* careful of
+      overfitting when performing polynomial regression.
+
+```python
+>>> import numpy as np
+>>> from sklearn.preprocessing import PolynomialFeatures
+>>> poly_feat = PolynomialFeatures(degree = 2)
+>>> x = np.arange(6).reshape(3, 2)
+>>> x # [a, b]
+array([[0, 1],
+       [2, 3],
+       [4, 5]])
+
+>>> x_poly = poly_feat.fit_transform(x)
+>>> x_poly # [1, a, b, a ^ 2, ab, b ^ 2]
+array([[ 1.,  0.,  1.,  0.,  0.,  1.],
+       [ 1.,  2.,  3.,  4.,  6.,  9.],
+       [ 1.,  4.,  5., 16., 20., 25.]])
+```
