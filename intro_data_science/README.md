@@ -18,6 +18,11 @@
   - Exploratory data analysis
   - Regression on real data
   - K-folds validation
+- [Lesson 5](./lesson_05.md)
+  - Logistic Regression algorithm
+  - Titanic survivors classification
+  - Advanced visualization with seaborn
+  - Feature engineering
 
 ## References
 
