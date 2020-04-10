@@ -23,6 +23,12 @@
   - Titanic survivors classification
   - Advanced visualization with seaborn
   - Feature engineering
+- [Lesson 6](./lesson_06.md)
+  - Text count vectorization
+  - Text TFIDF vectorization
+  - Text manipulation using pandas
+  - Sentiment analysis on movie reviews
+  - Trained model analysis
 
 ## References
 
