@@ -289,7 +289,8 @@ registering with the optimizer and automatic differentiation.
 
 In the `__init__` method, we call the parent object (`nn.Module`)
 `__init__` method to initialize our network module. We then declare
-the layers of our neural network. In this case we will three layers:
+the layers of our neural network. In this case we use will three
+layers:
 - one input layer with two inputs (the coordinates of our points) and
   64 outputs (the size of our hidden layer).
 - one hidden layer with 64 inputs and 64 outputs
