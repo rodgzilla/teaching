@@ -29,6 +29,11 @@
   - Text manipulation using pandas
   - Sentiment analysis on movie reviews
   - Trained model analysis
+- [Lesson 7](./lesson_07.md)
+  - KMeans clustering
+  - Principal component analysis
+  - t-distributed stochastic neighbor embedding
+  - Clutering and dimensionality reduction on text
 
 ## References
 
