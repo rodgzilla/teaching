@@ -4,8 +4,9 @@
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Vxq9yj2pVWk/0.jpg)](https://www.youtube.com/watch?v=Vxq9yj2pVWk)
 
-Have you ever dreamed of building image enhancement software like the
-one they use in the video above? Today's your chance to actually do it!
+Have you ever dreamed of building image enhancement softwares like the
+one they use in the video above? Today's your chance to actually do
+it!
 
 The goal of this project is to build a [*super
 resolution*](https://en.wikipedia.org/wiki/Super-resolution_imaging)
