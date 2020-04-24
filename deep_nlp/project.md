@@ -5,7 +5,7 @@
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Vxq9yj2pVWk/0.jpg)](https://www.youtube.com/watch?v=Vxq9yj2pVWk)
 
 Have you ever dreamed of building image enhancement softwares like the
-one they use in the video above? Today's your chance to actually do
+ones they use in the video above? Today's your chance to actually do
 it!
 
 The goal of this project is to build a [*super
@@ -16,12 +16,10 @@ learning what bigger image usually look like.
 
 ___
 
-## Description
-
-### Core
+## Core
 
 The goal of this level it to build a convolutional super resolution
-network. This network takes inputs small images that have been
+network. This network takes as inputs small images that have been
 obtained by reducing the resolution of MNIST pictures. For example if
 we reduce the resolution of the following 28x28 image
 
@@ -50,12 +48,12 @@ the images.
 
 ___
 
-### Bonuses
+## Bonuses
 
 You are free to try any number the bonus objectives, in the order you
 want.
 
-#### 1. Fashion MNIST
+### 1. Fashion MNIST
 
 Adapt the code you used to produce your MNIST super resolution model
 on the [Fashion MNIST dataset](https://arxiv.org/abs/1708.07747).
@@ -64,7 +62,7 @@ on the [Fashion MNIST dataset](https://arxiv.org/abs/1708.07747).
 
 ___
 
-#### 2. HD MNIST
+### 2. HD MNIST
 
 Find a way to use your model to obtain high definition images of MNIST
 digits.
@@ -73,7 +71,7 @@ digits.
 
 ___
 
-#### 3. Additional supervision
+### 3. Additional supervision
 
 To increase the quality of the super resolution process, you can
 create a new training loss that is a weighted sum of two metrics:
@@ -92,7 +90,7 @@ resolution model training process starts.
 
 ___
 
-#### 4. Meta bonus
+### 4. Meta bonus
 
 Combine any number of the previous bonuses.
 
