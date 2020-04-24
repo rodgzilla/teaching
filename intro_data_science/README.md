@@ -34,6 +34,14 @@
   - Principal component analysis
   - t-distributed stochastic neighbor embedding
   - Clutering and dimensionality reduction on text
+- [Lesson 8](./lesson_08.md)
+  - Decision Trees
+  - Random Forests
+  - Model Ensembles
+  - Nearest Neighbors algorithms
+  - Locally sensitive hashing
+  - Support Vector Machines
+  - Neural Networks
 
 ## References
 
