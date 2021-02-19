@@ -282,7 +282,7 @@ dtype: int64
 4  21  22
 ```
 
-2. (_harder_) Select the columns which sum is an even number. The result should be
+4. (_harder_) Select the columns which sum is an even number. The result should be
 
 ```python
     a   c   e
