@@ -1,9 +1,31 @@
 # Practical work 2
 
+## Modified course example
+
+![Quadrant classifier](../figures/quadrant_clf.png)
+
+The goal of this exercice is to modify the example from the course to
+perform the classification task presented in the figure above.
+
+1. Create the dataset for this task with the following classes:
+- x < 0
+  - y < 0: Label 0
+  - y >= 0: Label 1
+- x >= 0
+  - y < 0: Label 2
+  - y >= 0: Label 3
+
+2. Modify the neural network architecture to be compatible with this
+   task. Hint: What is the number of classes in this problem.
+
+3. Add a second hidden layer to your network.
+
+## MNIST
+
 In this practical work, we will build a linear neural network that
 will classify MNIST digits.
 
-## Dataset downloading and loading
+### Dataset downloading and loading
 
 Create a new notebook and, in a new cell, download the dataset using
 the following commands:
@@ -38,7 +60,7 @@ composed of 10000 images that we will use to evaluate the
 *generalization capabilities* of our model.
 
 
-## Visualize images
+### Visualize images
 
 Import `matplotlib` using the following commands
 
@@ -54,12 +76,12 @@ along with their corresponding labels.
 
 ![Test MNIST image of 9](../figures/mnist_digit_02.png)
 
-## Data reshaping
+### Data reshaping
 
 Once the data is loaded, reshape the tensors in order to consider the
 images as 1D `float` tensors.
 
-## Data normalization
+### Data normalization
 
 The first step of the machine learning process consists in normalizing
 our data. We want to transform the images in a way that the pixel
@@ -71,14 +93,14 @@ the mean and the standard deviation of the *training set* as the test
 set is supposed to represent new data which could not have been used
 to compute the mean and the standard deviation.
 
-## Model building
+### Model building
 
 Create a neural network that takes the 1D representation of the images
 and outputs confidence levels for the the 10 digit classes. The number
 of layers and the number of neurons in each layer is up to you. Use
 the neural network presented during the course as a base.
 
-## Training and evaluation code
+### Training and evaluation code
 
 Write a training function and an evaluation function inspired by the
 ones we have seen in the course.
@@ -134,7 +156,7 @@ The execution of your code should display something like this:
 [ 19][  500] -> 90.844% training accuracy 91.521% testing accuracy
 ```
 
-## Visualize errors
+### Visualize errors
 
 Write a function that allows you to visualize the images on which the
 model predictions were wrong. In order to visualize these images using
