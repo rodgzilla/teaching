@@ -85,13 +85,12 @@ We have computed the value of our function for specific values of its
 input variable. To do this, we have made the values of the
 computations propagate *forward* (from left to right in our
 computation graph representation). This process is called the *forward
-pass*, it is what we do when we perform an inference of neural
-network.
+pass*, it is what we do when we perform a neural network inference.
 
-We are now ready to perform the *backward pass* in which we
-*backpropagate* the gradients from the result of the function to its
-input variables. We will perform this process from right to left in
-our representation.
+We are now ready to perform the *backward pass* in which we propagate
+the gradients backward from the result of the function to its input
+variables. We will perform this process from right to left in our
+representation.
 
 ![Backpropagation figure 3](../figures/backpropagation_03.png)
 
@@ -236,7 +235,7 @@ functions that could be interesting to us it has multiple caveats:
   reach the parameter set necessary for the approximation or whether
   it is even
   [possible](https://en.wikipedia.org/wiki/Computational_learning_theory)
-  using learning algorithms such as the Gradient Descent.
+  using learning algorithms such as Gradient Descent.
 
 To remedy these problems, deep learning practitioners use other kind of
 layers in order to "help" the neural network be able to learn the
@@ -277,12 +276,12 @@ input pixels have been used in the computation.
 
 As you can see, the shape of the output of the process is different
 from the shape of the input. We have applied what is called a *strict
-convolution* which consists in computing output values only at place
+convolution* which consists in computing output values only at places
 for which the convolution kernel "fits" in the input. In this example,
 we loose a 1 pixel band on each side: top, bottom, left and right.
 
 Before digging deeper into convolutions, let's try to get an intuition
-of why they are used. Let's apply two different convolutions filters
+of what they are used for. Let's apply two different convolutions filters
 to the same image and take a look at the output.
 
 ![Sobel operators example](../figures/sobel_operator_example.png)
@@ -363,7 +362,7 @@ the layer we will have `3` `3x3` weight matrices as shown in the
 animation](http://cs231n.github.io/convolutional-networks/). Secondly,
 we see that we do not specify the *shape* of images that the layer
 will take as input, only their number of channels. This is a
-specificity of convolutions, the sliding operation does not depends on
+specificity of convolutions, the sliding operation does not depend on
 the size of the input. Only the shape of the output will depend on it.
 
 ```python
@@ -380,7 +379,7 @@ have 7 `out_channels`, we have computed for (almost) every input pixel
 kernel of the layer. In the previous sentence, we mentioned that we
 have performed computation for "almost" every input pixel because, as
 mentioned earlier, we are applying *strict convolutions*. This
-implies that we lose a "1 pixel band" around each images, explained
+implies that we lose a "1 pixel band" around each image, explaining
 the `[48, 48]` output shape.
 
 In order to fix the *strict convolution* behavior, we often use
@@ -389,8 +388,8 @@ In order to fix the *strict convolution* behavior, we often use
 ![Convolution padding animation](../figures/sliding_convolution_padding.gif)
 
 When performing convolution operations with padding, we simply perform
-our computations "as if" our input were bigger. The non-existent value
-are replaced by `0`s.
+our computations "as if" our input were bigger. The non-existent
+values are replaced by `0`s.
 
 ```python
 >>> img_batch = torch.randn(5, 3, 50, 50)
@@ -470,10 +469,10 @@ We apply a max pooling operation using the `max_pool2d` function of
 the [functional](https://pytorch.org/docs/stable/nn.functional.html)
 interface of PyTorch. This operation is also available as a
 `nn.Module` but a good habit to take is mainly use `nn.Module`s for
-object with *parameters*, as the max pooling operation does not have
+object with *parameters*. As the max pooling operation does not have
 parameter, we use its functional version.
 
-We can also see that the output of the max pooling operation have a
+We can also see that the output of the max pooling operation has a
 `grad_fn`, which is important as it means it is differentiable.
 
 The output contains `1` sample, with `1` channel and the size of the
@@ -484,8 +483,7 @@ just as in earlier figure.
 
 We now have all the tools required to deeply understand the state of
 the art model of 2014, [VGG16](https://arxiv.org/abs/1409.1556) (a
-model with `16` layers from the Oxford's Visual Geometry Group
-(`VGG`)).
+model with `16` layers from Oxford's Visual Geometry Group (`VGG`)).
 
 ![VGG16 architecture](../figures/VGG16_architecture.png)
 
@@ -494,12 +492,12 @@ model with `16` layers from the Oxford's Visual Geometry Group
 Let's describe what we can see in this figure. The task that this
 model is solving is image classification. It takes `224x224` RGB pixel
 images (input shape of `224x224x3`) as input and outputs a probability
-distribution of `1000` classes.
+distribution over `1000` classes.
 
-This model is composed of two blocks, a *convolutional* one and a fully
-connected *one*.
+This model is composed of two blocks, a *convolutional* one and a *fully
+connected* one.
 
-Let's take a look at the convolutional part. This figures illustrates
+Let's take a look at the convolutional part. This figure illustrates
 a very common design choice for convolutional neural networks. The
 authors of the paper alternate sequences of convolution layers with
 pooling layers. The number of convolution layers along with their
